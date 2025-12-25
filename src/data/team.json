@@ -1,0 +1,23 @@
+[
+  {
+    "id": "joaquin-espinoza",
+    "name": "Joaquin Espinoza",
+    "role": "Head of Production",
+    "image": "/images/team/joaquin.svg",
+    "bio": "Joaquin is the creative force behind Baja Badlands Productions, bringing vision and leadership to every project. With a passion for storytelling and a keen eye for detail, he guides the production process from concept to completion."
+  },
+  {
+    "id": "orlando-ortega",
+    "name": "Orlando Ortega",
+    "role": "Head of Photography and Cinematography",
+    "image": "/images/team/orlando.svg",
+    "bio": "Orlando brings technical expertise and artistic vision to the visual aspects of our productions. His mastery of cinematography and photography ensures that every frame captures the intended emotion and aesthetic."
+  },
+  {
+    "id": "jack-hayley",
+    "name": "Jack Hayley",
+    "role": "Head of Music and Audio Engineering",
+    "image": "/images/team/jack.svg",
+    "bio": "Jack handles all aspects of audio production, from music composition to sound design and engineering. His expertise ensures that the auditory experience of our films matches the visual excellence we strive for."
+  }
+]

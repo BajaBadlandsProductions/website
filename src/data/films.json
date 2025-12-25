@@ -1,0 +1,76 @@
+[
+  {
+    "id": "daniel",
+    "title": "Daniel",
+    "year": 2022,
+    "slug": "daniel",
+    "description": "A compelling short film exploring themes of identity and self-discovery.",
+    "longDescription": "Daniel is a thought-provoking short film that delves into the complexities of personal identity and the journey of self-discovery. Through intimate storytelling and compelling visuals, the film explores the challenges faced by its protagonist as he navigates life's uncertainties.",
+    "posterImage": "/images/films/daniel-poster.jpg",
+    "heroVideo": "/videos/baseball_scene.mp4",
+    "youtubeId": "369njlWuq9c",
+    "credits": {
+      "director": "Joaquin Espinoza",
+      "producer": "Baja Badlands Productions",
+      "cinematographer": "Orlando Ortega"
+    },
+    "featured": true,
+    "category": "bcu"
+  },
+  {
+    "id": "white-waltz",
+    "title": "White Waltz",
+    "year": 2023,
+    "slug": "white-waltz",
+    "description": "An elegant exploration of movement, music, and emotion.",
+    "longDescription": "White Waltz is a visually stunning piece that combines the grace of dance with the power of cinema. The film captures the delicate interplay between movement and music, creating an emotional journey that resonates with audiences through its artistic expression and cinematographic excellence.",
+    "posterImage": "/images/films/white-waltz-poster.png",
+    "heroVideo": "/videos/motel_scene.mp4",
+    "youtubeId": "e005sPUmkRs",
+    "credits": {
+      "director": "Joaquin Espinoza",
+      "producer": "Baja Badlands Productions",
+      "cinematographer": "Orlando Ortega",
+      "editor": "Jack Hayley"
+    },
+    "featured": true,
+    "category": "bcu"
+  },
+  {
+    "id": "myopia",
+    "title": "Myopia",
+    "year": 2024,
+    "slug": "myopia",
+    "description": "A tense psychological thriller that blurs the lines between memory, hallucination, and reality.",
+    "longDescription": "James, a troubled young man, finds himself trapped in a nightmarish cycle of reality and illusion, with his consciousness oscillating between a dim hotel room and disorienting outdoor settings. Each transition reveals the ominous presence of a masked man. As he grapples with his sanity, James must uncover the truth behind his surreal experiences before time runs out. 'Myopia' is a tense psychological thriller that blurs the lines between memory, hallucination, and a sinister reality, keeping viewers on edge as they follow James' desperate quest for clarity.",
+    "posterImage": "/images/films/myopia-poster.png",
+    "heroVideo": "/videos/myopia.mp4",
+    "youtubeId": "AHViLrtOKMc",
+    "credits": {
+      "director": "Joaquin Espinoza",
+      "producer": "Baja Badlands Productions",
+      "cinematographer": "Orlando Ortega"
+    },
+    "featured": true,
+    "category": "bcu"
+  },
+  {
+    "id": "the-end-of-everything",
+    "title": "The End of Everything",
+    "year": 2023,
+    "slug": "the-end-of-everything",
+    "description": "A contemplative piece exploring themes of finality and new beginnings.",
+    "longDescription": "The End of Everything is a profound exploration of endings and the potential for renewal. Through carefully crafted visuals and narrative, the film examines how conclusions can become the foundation for new chapters, offering viewers a meditation on the cyclical nature of life and experience.",
+    "posterImage": "/images/films/the-end-of-everything-poster.jpg",
+    "heroVideo": "/videos/piano.mp4",
+    "youtubeId": "yfjhQv-8yNw",
+    "credits": {
+      "director": "Joaquin Espinoza",
+      "producer": "Baja Badlands Productions",
+      "cinematographer": "Orlando Ortega",
+      "editor": "Jack Hayley"
+    },
+    "featured": false,
+    "category": "film"
+  }
+]
