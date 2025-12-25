@@ -48,13 +48,6 @@ export function FilmCard({ film, className = '', priority = false }: FilmCardPro
         
         {/* Hover Overlay */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
-        
-        {/* Play Button Overlay */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white/90 rounded-full flex items-center justify-center backdrop-blur-sm">
-            <div className="w-0 h-0 border-l-[8px] sm:border-l-[10px] md:border-l-[12px] border-l-black border-y-[6px] sm:border-y-[7px] md:border-y-[8px] border-y-transparent ml-1" />
-          </div>
-        </div>
 
         {/* Year Badge */}
         <div className="absolute top-3 sm:top-4 right-3 sm:right-4 px-2 py-1 bg-black/70 text-white text-xs font-medium rounded backdrop-blur-sm">
