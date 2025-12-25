@@ -2,7 +2,8 @@
 
 import { Film } from '@/types';
 import Link from 'next/link';
-import { OptimizedImage } from '@/components/ui';
+import { OptimizedImage, OptimizedVideo } from '@/components/ui';
+import { useState } from 'react';
 
 interface FilmCardProps {
   film: Film;
@@ -11,23 +12,38 @@ interface FilmCardProps {
 }
 
 export function FilmCard({ film, className = '', priority = false }: FilmCardProps) {
+  const [showVideo, setShowVideo] = useState(false);
+
   return (
     <Link 
       href={`/films/${film.slug}`}
       className={`film-card group block relative overflow-hidden bg-gray-100 dark:bg-gray-800 transition-all duration-300 hover:scale-105 hover:shadow-2xl ${className}`}
+      onMouseEnter={() => film.heroVideo && setShowVideo(true)}
+      onMouseLeave={() => setShowVideo(false)}
     >
-      {/* Film Poster */}
+      {/* Film Background - Video or Poster */}
       <div className="relative aspect-responsive-film overflow-hidden">
+        {/* Video Background (shows on hover if available) */}
+        {film.heroVideo && showVideo && (
+          <OptimizedVideo
+            src={film.heroVideo}
+            poster={film.posterImage}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
+          />
+        )}
+        
+        {/* Poster Image (default or fallback) */}
         <OptimizedImage
           src={film.posterImage}
           alt={`${film.title} poster`}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-110"
+          className={`object-cover transition-all duration-500 ${showVideo && film.heroVideo ? 'opacity-0' : 'opacity-100 group-hover:scale-110'}`}
           priority={priority}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          quality={90}
-          placeholder="blur"
-          loading={priority ? 'eager' : 'lazy'}
         />
         
         {/* Hover Overlay */}

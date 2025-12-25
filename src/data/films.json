@@ -6,7 +6,7 @@
     "slug": "daniel",
     "description": "A compelling short film exploring themes of identity and self-discovery.",
     "longDescription": "Daniel is a thought-provoking short film that delves into the complexities of personal identity and the journey of self-discovery. Through intimate storytelling and compelling visuals, the film explores the challenges faced by its protagonist as he navigates life's uncertainties.",
-    "posterImage": "/images/films/daniel-poster.jpg",
+    "posterImage": "/images/films/daniel-poster-original.png",
     "heroVideo": "/videos/baseball_scene.mp4",
     "youtubeId": "369njlWuq9c",
     "credits": {
@@ -61,7 +61,7 @@
     "slug": "the-end-of-everything",
     "description": "A contemplative piece exploring themes of finality and new beginnings.",
     "longDescription": "The End of Everything is a profound exploration of endings and the potential for renewal. Through carefully crafted visuals and narrative, the film examines how conclusions can become the foundation for new chapters, offering viewers a meditation on the cyclical nature of life and experience.",
-    "posterImage": "/images/films/the-end-of-everything-poster.jpg",
+    "posterImage": "/images/films/the-end-of-everything-poster-original.png",
     "heroVideo": "/videos/piano.mp4",
     "youtubeId": "yfjhQv-8yNw",
     "credits": {

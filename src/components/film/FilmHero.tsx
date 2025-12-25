@@ -9,11 +9,15 @@ interface FilmHeroProps {
   className?: string;
 }
 
-export function FilmHero({ film, showOverlay = true, className = '' }: FilmHeroProps) {
+export function FilmHero({ 
+  film, 
+  showOverlay = true, 
+  className = ''
+}: FilmHeroProps) {
   return (
     <section className={`relative hero-video-container flex items-center justify-center overflow-hidden ${className}`}>
       {/* Video Background */}
-      {film.heroVideo && (
+      {film.heroVideo ? (
         <div className="absolute inset-0 z-0">
           <OptimizedVideo
             src={film.heroVideo}
@@ -22,19 +26,14 @@ export function FilmHero({ film, showOverlay = true, className = '' }: FilmHeroP
             muted
             loop
             playsInline
-            preload="metadata"
             className="w-full h-full object-cover"
-            priority={true}
-            fallbackImage={film.posterImage}
           />
           
           {/* Video overlay for better text readability */}
           <div className="absolute inset-0 bg-black/30" />
         </div>
-      )}
-
-      {/* Fallback background image if video doesn't exist */}
-      {!film.heroVideo && (
+      ) : (
+        /* Fallback background image if no video */
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${film.posterImage})` }}
@@ -72,12 +71,18 @@ export function FilmHero({ film, showOverlay = true, className = '' }: FilmHeroP
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                <button className="btn-primary touch-target">
-                  Watch Now
-                </button>
-                <button className="btn-secondary touch-target">
+                <a
+                  href={`/films/${film.slug}`}
+                  className="btn-primary touch-target"
+                >
+                  Watch Film
+                </a>
+                <a
+                  href="/films"
+                  className="btn-secondary touch-target"
+                >
                   View Portfolio
-                </button>
+                </a>
               </div>
             </div>
           </div>

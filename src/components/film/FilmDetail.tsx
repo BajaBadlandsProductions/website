@@ -81,7 +81,7 @@ export function FilmDetail({ film }: FilmDetailProps) {
                   priority
                   sizes="(max-width: 1024px) 100vw, 33vw"
                   quality={95}
-                  placeholder="blur"
+                  placeholder="empty"
                 />
               </div>
             </div>

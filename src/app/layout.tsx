@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from 'next';
-import Script from 'next/script';
 import './globals.css';
 import { siteConfig } from '@/lib/config';
 
@@ -126,67 +125,12 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
         
-        {/* Performance optimizations */}
+        {/* Basic font preconnect */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://www.youtube.com" />
-        <link rel="dns-prefetch" href="https://i.ytimg.com" />
-        <link rel="dns-prefetch" href="https://img.youtube.com" />
-        
-        {/* Preload critical resources */}
-        <link rel="preload" href="/images/logo.png" as="image" type="image/png" />
       </head>
       <body className="antialiased font-sans">
         {children}
-        
-        {/* Performance monitoring script */}
-        <Script
-          id="performance-monitor"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              // Basic performance monitoring
-              if (typeof window !== 'undefined' && 'PerformanceObserver' in window) {
-                try {
-                  // Monitor LCP
-                  const lcpObserver = new PerformanceObserver((list) => {
-                    const entries = list.getEntries();
-                    const lastEntry = entries[entries.length - 1];
-                    if (lastEntry && lastEntry.startTime) {
-                      console.log('LCP:', Math.round(lastEntry.startTime));
-                    }
-                  });
-                  lcpObserver.observe({ entryTypes: ['largest-contentful-paint'] });
-
-                  // Monitor FID
-                  const fidObserver = new PerformanceObserver((list) => {
-                    const entries = list.getEntries();
-                    entries.forEach((entry) => {
-                      const fid = entry.processingStart - entry.startTime;
-                      console.log('FID:', Math.round(fid));
-                    });
-                  });
-                  fidObserver.observe({ entryTypes: ['first-input'] });
-
-                  // Monitor CLS
-                  let clsValue = 0;
-                  const clsObserver = new PerformanceObserver((list) => {
-                    const entries = list.getEntries();
-                    entries.forEach((entry) => {
-                      if (!entry.hadRecentInput) {
-                        clsValue += entry.value;
-                      }
-                    });
-                    console.log('CLS:', Math.round(clsValue * 1000) / 1000);
-                  });
-                  clsObserver.observe({ entryTypes: ['layout-shift'] });
-                } catch (error) {
-                  // Silently fail if performance monitoring is not supported
-                }
-              }
-            `,
-          }}
-        />
       </body>
     </html>
   );
