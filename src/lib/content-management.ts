@@ -151,7 +151,7 @@ export const FILM_TEMPLATE: NewFilmData = {
   heroVideo: '',
   youtubeId: '',
   credits: {
-    director: 'Joaquin Espinoza',
+    director: 'Joaquin Bronco',
     producer: 'Baja Badlands Productions',
     cinematographer: 'Orlando Ortega',
   },
