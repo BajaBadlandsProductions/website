@@ -55,7 +55,7 @@ export function generateFilmStructuredData(film: Film) {
       '@type': 'Person',
       name: film.credits.producer,
     } : undefined,
-    genre: film.category === 'bcu' ? 'Drama' : 'Short Film',
+    genre: film.category === 'anthology' ? 'Drama' : 'Short Film',
   };
 }
 
@@ -108,7 +108,7 @@ export function generateFilmMetadata(film: Film): Metadata {
       siteConfig.name,
       film.credits.director,
       film.credits.producer,
-      film.category === 'bcu' ? 'Baja Cinematic Universe' : 'short film',
+      film.category === 'anthology' ? 'The Anthology' : 'short film',
     ].filter((keyword): keyword is string => Boolean(keyword)),
     authors: [
       {

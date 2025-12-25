@@ -15,7 +15,7 @@
       "cinematographer": "Orlando Ortega"
     },
     "featured": true,
-    "category": "bcu"
+    "category": "anthology"
   },
   {
     "id": "white-waltz",
@@ -34,7 +34,7 @@
       "editor": "Jack Hayley"
     },
     "featured": true,
-    "category": "bcu"
+    "category": "anthology"
   },
   {
     "id": "myopia",
@@ -52,7 +52,7 @@
       "cinematographer": "Orlando Ortega"
     },
     "featured": true,
-    "category": "bcu"
+    "category": "anthology"
   },
   {
     "id": "the-end-of-everything",

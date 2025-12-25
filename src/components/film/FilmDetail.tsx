@@ -185,7 +185,7 @@ export function FilmDetail({ film }: FilmDetailProps) {
             {/* Film Category and Year */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-6 sm:pt-8 border-t border-gray-200 dark:border-gray-700">
               <span className="inline-block px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-full capitalize">
-                {film.category === 'bcu' ? 'Baja Cinematic Universe' : film.category.replace('-', ' ')}
+                {film.category === 'anthology' ? 'The Anthology' : film.category.replace('-', ' ')}
               </span>
               <span className="text-gray-500 dark:text-gray-400 text-responsive-sm">
                 Released {film.year}

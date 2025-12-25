@@ -81,8 +81,8 @@ export function FilmCard({ film, className = '', priority = false }: FilmCardPro
 
         {/* Category and Arrow */}
         <div className="flex items-center justify-between">
-          <span className="inline-block px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded-full capitalize">
-            {film.category === 'bcu' ? 'BCU' : film.category.replace('-', ' ')}
+          <span className="text-xs text-gray-400 dark:text-gray-600 uppercase tracking-widest font-light">
+            {film.category === 'anthology' ? 'The Anthology' : film.category.replace('-', ' ')}
           </span>
           
           {/* Arrow indicator */}

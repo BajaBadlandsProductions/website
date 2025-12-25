@@ -16,7 +16,7 @@ export interface Film {
     editor?: string;
   };
   featured: boolean;
-  category: 'film' | 'commercial' | 'music-video' | 'bcu';
+  category: 'film' | 'commercial' | 'music-video' | 'anthology';
 }
 
 export interface TeamMember {

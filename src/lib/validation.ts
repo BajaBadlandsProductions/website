@@ -21,7 +21,7 @@ export function isFilm(obj: unknown): obj is Film {
     typeof (obj as Record<string, unknown>).description === 'string' &&
     typeof (obj as Record<string, unknown>).posterImage === 'string' &&
     typeof (obj as Record<string, unknown>).featured === 'boolean' &&
-    ['film', 'commercial', 'music-video', 'bcu'].includes((obj as Record<string, unknown>).category as string) &&
+    ['film', 'commercial', 'music-video', 'anthology'].includes((obj as Record<string, unknown>).category as string) &&
     ((obj as Record<string, unknown>).longDescription === undefined || typeof (obj as Record<string, unknown>).longDescription === 'string') &&
     ((obj as Record<string, unknown>).heroVideo === undefined || typeof (obj as Record<string, unknown>).heroVideo === 'string') &&
     ((obj as Record<string, unknown>).trailerUrl === undefined || typeof (obj as Record<string, unknown>).trailerUrl === 'string') &&

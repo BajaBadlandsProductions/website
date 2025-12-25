@@ -38,12 +38,12 @@ export function getFilmsByCategory(category: Film['category']): Film[] {
   return films.filter(film => film.category === category);
 }
 
-export function getBCUFilms(): Film[] {
-  return films.filter(film => film.category === 'bcu').sort((a, b) => a.year - b.year);
+export function getAnthologyFilms(): Film[] {
+  return films.filter(film => film.category === 'anthology').sort((a, b) => a.year - b.year);
 }
 
 export function getOtherFilms(): Film[] {
-  return films.filter(film => film.category !== 'bcu').sort((a, b) => b.year - a.year);
+  return films.filter(film => film.category !== 'anthology').sort((a, b) => b.year - a.year);
 }
 
 export function getTeamMemberById(id: string): TeamMember | undefined {

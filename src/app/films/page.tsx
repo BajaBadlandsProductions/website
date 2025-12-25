@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/layout';
 import { FilmGrid } from '@/components/film';
-import { getBCUFilms, getOtherFilms } from '@/lib/data';
+import { getAnthologyFilms, getOtherFilms } from '@/lib/data';
 import { generatePageMetadata, generateBreadcrumbStructuredData, generateJsonLd } from '@/lib/seo';
 import Script from 'next/script';
 
@@ -12,7 +12,7 @@ export const metadata: Metadata = generatePageMetadata({
 });
 
 export default function FilmsPage() {
-  const bcuFilms = getBCUFilms();
+  const anthologyFilms = getAnthologyFilms();
   const otherFilms = getOtherFilms();
 
   // Generate breadcrumb structured data
@@ -41,12 +41,12 @@ export default function FilmsPage() {
           </p>
         </div>
         
-        {/* Baja Cinematic Universe Section */}
-        {bcuFilms.length > 0 && (
+        {/* The Anthology Section */}
+        {anthologyFilms.length > 0 && (
           <div className="mb-16">
             <FilmGrid 
-              films={bcuFilms}
-              title="Baja Cinematic Universe"
+              films={anthologyFilms}
+              title="The Anthology"
               subtitle="An interconnected series of films exploring themes of identity, reality, and human connection through the lens of surreal storytelling"
               showFeaturedOnly={false}
               className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black"
