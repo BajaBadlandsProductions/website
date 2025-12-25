@@ -9,11 +9,13 @@ export interface Film {
   heroVideo?: string;
   trailerUrl?: string;
   youtubeId?: string;
+  spotifyEmbedId?: string;
   credits: {
     director?: string;
     producer?: string;
     cinematographer?: string;
     editor?: string;
+    composer?: string;
   };
   featured: boolean;
   category: 'film' | 'commercial' | 'music-video' | 'anthology';

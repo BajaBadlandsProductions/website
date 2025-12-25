@@ -2,7 +2,7 @@
 
 import { Film } from '@/types';
 import Link from 'next/link';
-import { OptimizedImage, OptimizedVideo } from '@/components/ui';
+import { OptimizedImage, OptimizedVideo, SpotifyEmbed } from '@/components/ui';
 
 interface FilmDetailProps {
   film: Film;
@@ -130,6 +130,23 @@ export function FilmDetail({ film }: FilmDetailProps) {
               </div>
             )}
 
+            {/* Soundtrack */}
+            {film.spotifyEmbedId && (
+              <div>
+                <h2 className="text-responsive-xl font-semibold text-black dark:text-white mb-4">
+                  Original Soundtrack
+                </h2>
+                <p className="text-gray-600 dark:text-gray-400 text-responsive-sm mb-6">
+                  Original score composed by Jack Hayley
+                </p>
+                <SpotifyEmbed 
+                  embedId={film.spotifyEmbedId} 
+                  title={`${film.title} Soundtrack`}
+                  className="rounded-lg overflow-hidden shadow-lg"
+                />
+              </div>
+            )}
+
             {/* Production Credits */}
             <div>
               <h2 className="text-responsive-xl font-semibold text-black dark:text-white mb-4">
@@ -176,6 +193,17 @@ export function FilmDetail({ film }: FilmDetailProps) {
                     </span>
                     <span className="text-responsive-base text-gray-900 dark:text-white">
                       {film.credits.editor}
+                    </span>
+                  </div>
+                )}
+                
+                {film.credits.composer && (
+                  <div className="flex flex-col">
+                    <span className="text-xs sm:text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">
+                      Original Score
+                    </span>
+                    <span className="text-responsive-base text-gray-900 dark:text-white">
+                      {film.credits.composer}
                     </span>
                   </div>
                 )}

@@ -26,6 +26,7 @@ export function isFilm(obj: unknown): obj is Film {
     ((obj as Record<string, unknown>).heroVideo === undefined || typeof (obj as Record<string, unknown>).heroVideo === 'string') &&
     ((obj as Record<string, unknown>).trailerUrl === undefined || typeof (obj as Record<string, unknown>).trailerUrl === 'string') &&
     ((obj as Record<string, unknown>).youtubeId === undefined || typeof (obj as Record<string, unknown>).youtubeId === 'string') &&
+    ((obj as Record<string, unknown>).spotifyEmbedId === undefined || typeof (obj as Record<string, unknown>).spotifyEmbedId === 'string') &&
     typeof (obj as Record<string, unknown>).credits === 'object' &&
     (obj as Record<string, unknown>).credits !== null
   );
@@ -153,4 +154,10 @@ export function isValidSlug(slug: string): boolean {
 export function isValidYouTubeId(id: string): boolean {
   const youtubeIdRegex = /^[a-zA-Z0-9_-]{11}$/;
   return youtubeIdRegex.test(id);
+}
+
+// Spotify Album ID validation
+export function isValidSpotifyAlbumId(id: string): boolean {
+  const spotifyIdRegex = /^[a-zA-Z0-9]{22}$/;
+  return spotifyIdRegex.test(id);
 }

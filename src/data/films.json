@@ -9,10 +9,12 @@
     "posterImage": "/images/films/daniel-poster-original.png",
     "heroVideo": "/videos/baseball_scene.mp4",
     "youtubeId": "369njlWuq9c",
+    "spotifyEmbedId": "2ZR5KWcHykpG2YisUWT862",
     "credits": {
       "director": "Joaquin Espinoza",
       "producer": "Baja Badlands Productions",
-      "cinematographer": "Orlando Ortega"
+      "cinematographer": "Orlando Ortega",
+      "composer": "Jack Hayley"
     },
     "featured": true,
     "category": "anthology"
@@ -27,11 +29,13 @@
     "posterImage": "/images/films/white-waltz-poster.png",
     "heroVideo": "/videos/waltz_scene.mp4",
     "youtubeId": "e005sPUmkRs",
+    "spotifyEmbedId": "7iFeTe4xtAvXScoVj28VEs",
     "credits": {
       "director": "Joaquin Espinoza",
       "producer": "Baja Badlands Productions",
       "cinematographer": "Orlando Ortega",
-      "editor": "Jack Hayley"
+      "editor": "Orlando Ortega",
+      "composer": "Jack Hayley"
     },
     "featured": true,
     "category": "anthology"
@@ -46,10 +50,12 @@
     "posterImage": "/images/films/myopia-poster.png",
     "heroVideo": "/videos/myopia.mp4",
     "youtubeId": "AHViLrtOKMc",
+    "spotifyEmbedId": "0feOeJJHcjWoyWdY8aqD9R",
     "credits": {
       "director": "Joaquin Espinoza",
       "producer": "Baja Badlands Productions",
-      "cinematographer": "Orlando Ortega"
+      "cinematographer": "Orlando Ortega",
+      "composer": "Jack Hayley"
     },
     "featured": true,
     "category": "anthology"
@@ -68,7 +74,8 @@
       "director": "Joaquin Espinoza",
       "producer": "Baja Badlands Productions",
       "cinematographer": "Orlando Ortega",
-      "editor": "Jack Hayley"
+      "editor": "Orlando Ortega",
+      "composer": "Jack Hayley"
     },
     "featured": false,
     "category": "film"
