@@ -14,7 +14,21 @@
       "director": "Joaquin Bronco",
       "producer": "Baja Badlands Productions",
       "cinematographer": "Orlando Ortega",
-      "composer": "Jack Hayley"
+      "composer": "Jack Hayley",
+      "cast": [
+        {
+          "actor": "Bryan Lopez",
+          "character": "Daniel"
+        },
+        {
+          "actor": "Uriel Ruvalcaba",
+          "character": "The Scarred Man"
+        },
+        {
+          "actor": "Fernanda Laveaga",
+          "character": "Young Lady"
+        }
+      ]
     },
     "featured": true,
     "category": "anthology"
@@ -35,7 +49,17 @@
       "producer": "Baja Badlands Productions",
       "cinematographer": "Orlando Ortega",
       "editor": "Orlando Ortega",
-      "composer": "Jack Hayley"
+      "composer": "Jack Hayley",
+      "cast": [
+        {
+          "actor": "Alexandro Orpineda",
+          "character": "Alfred"
+        },
+        {
+          "actor": "Fernanda Laveaga",
+          "character": "Fairy"
+        }
+      ]
     },
     "featured": true,
     "category": "anthology"
@@ -55,7 +79,21 @@
       "director": "Joaquin Bronco",
       "producer": "Baja Badlands Productions",
       "cinematographer": "Orlando Ortega",
-      "composer": "Jack Hayley"
+      "composer": "Jack Hayley",
+      "cast": [
+        {
+          "actor": "Noah Andre",
+          "character": "James"
+        },
+        {
+          "actor": "Rafa Cervantes",
+          "character": "The Masked Man"
+        },
+        {
+          "actor": "Joaquin Espinoza",
+          "character": "Jerry"
+        }
+      ]
     },
     "featured": true,
     "category": "anthology"
@@ -71,11 +109,20 @@
     "heroVideo": "/videos/piano.mp4",
     "youtubeId": "yfjhQv-8yNw",
     "credits": {
-      "director": "Joaquin Bronco",
+      "director": "Orlando Ortega",
       "producer": "Baja Badlands Productions",
       "cinematographer": "Orlando Ortega",
       "editor": "Orlando Ortega",
-      "composer": "Jack Hayley"
+      "cast": [
+        {
+          "actor": "Alejandro Rascon",
+          "character": "Main Character"
+        },
+        {
+          "actor": "Joaquin Espinoza",
+          "character": "Supporting Character"
+        }
+      ]
     },
     "featured": false,
     "category": "film"

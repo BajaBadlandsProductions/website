@@ -16,6 +16,10 @@ export interface Film {
     cinematographer?: string;
     editor?: string;
     composer?: string;
+    cast?: Array<{
+      actor: string;
+      character: string;
+    }>;
   };
   featured: boolean;
   category: 'film' | 'commercial' | 'music-video' | 'anthology';

@@ -210,6 +210,27 @@ export function FilmDetail({ film }: FilmDetailProps) {
               </div>
             </div>
 
+            {/* Cast */}
+            {film.credits.cast && film.credits.cast.length > 0 && (
+              <div>
+                <h2 className="text-responsive-xl font-semibold text-black dark:text-white mb-4">
+                  Cast
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {film.credits.cast.map((castMember, index) => (
+                    <div key={index} className="flex flex-col">
+                      <span className="text-xs sm:text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">
+                        {castMember.character}
+                      </span>
+                      <span className="text-responsive-base text-gray-900 dark:text-white">
+                        {castMember.actor}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Film Category and Year */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-6 sm:pt-8 border-t border-gray-200 dark:border-gray-700">
               <span className="inline-block px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-full capitalize">
